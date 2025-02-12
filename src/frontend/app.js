@@ -1,5 +1,5 @@
 const apiEndpoint =
-  "https://gabrielbeerbackend2.purplecliff-0b6c4c14.westus2.azurecontainerapps.io/api/tasks";
+  "https://backend4.purplecliff-0b6c4c14.westus2.azurecontainerapps.io/api/tasks";
 
 $(document).ready(function () {
   // Charger les tâches au démarrage
