@@ -61,11 +61,11 @@ jobs:
 
       # Étape Lighthouse CI Action pour analyser les performances du site
       - name: Run Lighthouse CI
-        uses: googlechrome/lighthouse-ci-action@main
+        uses: treosh/lighthouse-ci-action@v12
         with:
-          urls: https://ex3v2.gabrielbeer.emf-informatique.ch/  # Remplace par l'URL de ton site
-          ploadArtifacts: true
-          configPath: './lighthouserc.json'         # Si tu utilises un fichier de config
+          urls: "https://ex3v2.gabrielbeer.emf-informatique.ch"  # remplace par l'URL de ton site
+          uploadArtifacts: true
+           # Si tu utilises un fichier de config
 
 
   close_pull_request_job:
