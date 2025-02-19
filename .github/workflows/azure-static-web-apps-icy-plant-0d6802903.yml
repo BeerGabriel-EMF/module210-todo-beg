@@ -61,9 +61,9 @@ jobs:
 
       # Étape Lighthouse CI Action pour analyser les performances du site
       - name: Run Lighthouse CI
-        uses: GoogleChrome/lighthouse-ci-action@v4
+        uses: googlechrome/lighthouse-ci-action@v0.5.0
         with:
-          urls: https://ex3v2.gabrielbeer.emf-informatique.ch # Remplacez par l'URL de votre site
+          urls: https://ex3v2.gabrielbeer.emf-informatique.ch/  # Remplacez par l'URL de votre site
           uploadArtifacts: true
           configPath: './lighthouserc.json'  # Si vous avez un fichier de configuration, sinon cette ligne peut être omise
 
