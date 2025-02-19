@@ -59,6 +59,14 @@ jobs:
           github_id_token: ${{ steps.idtoken.outputs.result }}
           ###### End of Repository/Build Configurations ######
 
+      # Étape Lighthouse CI Action pour analyser les performances du site
+      - name: Run Lighthouse CI
+        uses: GoogleChrome/lighthouse-ci-action@v4
+        with:
+          urls: https://ex3v2.gabrielbeer.emf-informatique.ch # Remplacez par l'URL de votre site
+          uploadArtifacts: true
+          configPath: './lighthouserc.json'  # Si vous avez un fichier de configuration, sinon cette ligne peut être omise
+
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
