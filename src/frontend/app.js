@@ -1,5 +1,5 @@
 const apiEndpoint =
-  "https://backend4.purplecliff-0b6c4c14.westus2.azurecontainerapps.io/api/tasks";
+  "https://backend210beerv2-eacsb6g8fwecg8ep.northeurope-01.azurewebsites.net/api/tasks";
 
 $(document).ready(function () {
   // Charger les tâches au démarrage
